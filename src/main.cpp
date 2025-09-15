@@ -46,9 +46,8 @@ int main() {
         "with yt_dlp.YoutubeDL(ydl_opts) as ydl:\n"
         "    ydl.download([url])\n";
 
-    // Run the script
+    // Run the script with the provided URL
     int result = PyRun_SimpleString(pyCode.c_str());
-
     if (result != 0) {
         std::cerr << "Error: yt-dlp execution failed.\n";
     } else {

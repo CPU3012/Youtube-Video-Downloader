@@ -4,7 +4,7 @@ project(YTDownloader CXX)
 # Find Python with development headers + libaries
 find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 
-add_executable(YTDownloader src/main.cpp)
+add_executable(YTDownloader src/main.cpp src/app.rc)
 
 # Tell compiler where Python headers are
 target_include_directories(YTDownloader PRIVATE ${Python3_INCLUDE_DIRS})
